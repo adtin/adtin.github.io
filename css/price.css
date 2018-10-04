@@ -16,11 +16,20 @@ a {
   cursor: pointer;
 }
 
+ul, li, ol {
+  margin: 0;
+  padding: 0;
+}
+
 a:hover {
   color: #fff;
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+  margin: 0;
+}
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -37,54 +46,6 @@ body {
 
 .header_title_dots {
   color: #ef2525;
-}
-
-.counter {
-  margin-top: 25px;
-  margin-bottom: -5px;
-  font-size: 48px;
-  font-weight: 700;
-}
-
-.subscribers {
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.absent {
-  margin-top: 137px;
-}
-
-.button_more {
-  display: block;
-  text-align: center;
-  margin-top: 100px;
-}
-
-.btn {
-  background-color: #ef2525;
-  font-size: 14px;
-  font-weight: 300;
-  border-radius: 30px;
-  padding: 9px 45px
-}
-
-#particles-js {
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-}
-
-#particles-contents {
-  position: absolute;
-  top: 100px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  z-index: 2;
 }
 
 .price {
@@ -175,7 +136,134 @@ nav ul li a {
   height: 100vh;
 }
 
-@media screen and (max-width: 864px) {
+.top_full {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 464px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.top_full_inside {
+  display: block;
+  height: 185px;
+  width: 100%;
+  background-color: #2cf444;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  text-align: center;
+}
+
+.top_img {
+  height: 85px;
+  width: 83px;
+  margin-top: 22px;
+}
+
+.top_title {
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 26px;
+}
+
+.top_list {
+  margin-top: 32px;
+
+}
+
+.top_list_item {
+  color: #1f2124;
+  font-size: 14px;
+
+}
+
+.top_old_price {
+  font-size: 23px;
+  color: #ef2525;
+  text-decoration: line-through;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 32px;
+}
+
+.top_new_price {
+  font-size: 33px;
+  font-weight: 700;
+  color: #1f2124;
+  text-align: center;
+}
+
+.first_full {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 384px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 25px;
+  margin-top: 40px;
+}
+
+.first_full_inside {
+  display: block;
+  height: 145px;
+  width: 100%;
+  background-color: #13c3e9;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  text-align: center;
+}
+
+.first_img {
+  height: 55px;
+  width: 53px;
+  margin-top: 22px;
+}
+
+.first_old_price {
+  font-size: 23px;
+  color: #ef2525;
+  text-decoration: line-through;
+  text-align: center;
+  font-weight: 700;
+
+}
+
+
+.second_img {
+  height: 50px;
+  width: 50px;
+  margin-top: 22px;
+}
+
+.second_full_inside {
+  display: block;
+  height: 145px;
+  width: 100%;
+  background-color: #ebd800;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  text-align: center;
+}
+
+.packets {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1024px) { /* iPhone 5 */
+  .top_list_item {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+      .top_full {
+        margin-top: 40px;
+      }
+
       .logo {
             padding: 0;
       }
@@ -315,10 +403,6 @@ nav ul li a {
     position: static;
   }
 
-  .price {
-    margin-top: 1100px;
-  }
-
   .header_title {
     font-size: 34px;
     margin-top: 50px;
@@ -340,6 +424,14 @@ nav ul li a {
   .logo {
         margin-top: 15px;
         margin-left: 0;
+  }
+
+  .header_title_price {
+    padding-bottom: 0;
+  }
+
+  .top_full {
+    margin-top: 40px;
   }
 
 

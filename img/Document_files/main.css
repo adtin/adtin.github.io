@@ -13,7 +13,6 @@ h3 {
 a {
   color: #fff;
   text-decoration: none;
-  cursor: pointer;
 }
 
 a:hover {
@@ -278,7 +277,7 @@ nav ul li a {
 }
 
 #nav:checked + .nav-btn i {
-      background: #000;
+      background: #fff;
       transition: transform 0.2s ease;
 }
 
@@ -310,47 +309,9 @@ nav ul li a {
 
 
 
-@media (max-width: 576px) { /* iPhone 6 */
+@media (max-width: 576px) {
   #particles-contents {
     position: static;
   }
 
-  .price {
-    margin-top: 1100px;
-  }
-
-  .header_title {
-    font-size: 34px;
-    margin-top: 50px;
-    margin-bottom: 70px;
-  }
-
-  .absent {
-    margin-top: 55px;
-  }
-
-  .networks_mobile {
-    margin-bottom: 60px;
-  }
-
-  .logo a {
-        font-size: 15px;
-  }
-
-  .logo {
-        margin-top: 15px;
-        margin-left: 0;
-  }
-
-
-}
-
-@media (max-width: 320px) { /* iPhone 5 */
-  body {
-    text-align: center;
-  }
-
-  .price {
-    margin-top: 1200px;
-  }
 }

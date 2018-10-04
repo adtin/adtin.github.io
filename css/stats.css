@@ -33,77 +33,12 @@ body {
   padding-top: 50px;
   font-size: 40px;
   font-weight: 700;
+  margin-top: 37px;
+  margin-bottom: 95px;
 }
 
 .header_title_dots {
   color: #ef2525;
-}
-
-.counter {
-  margin-top: 25px;
-  margin-bottom: -5px;
-  font-size: 48px;
-  font-weight: 700;
-}
-
-.subscribers {
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.absent {
-  margin-top: 137px;
-}
-
-.button_more {
-  display: block;
-  text-align: center;
-  margin-top: 100px;
-}
-
-.btn {
-  background-color: #ef2525;
-  font-size: 14px;
-  font-weight: 300;
-  border-radius: 30px;
-  padding: 9px 45px
-}
-
-#particles-js {
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-}
-
-#particles-contents {
-  position: absolute;
-  top: 100px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  z-index: 2;
-}
-
-.price {
-  height: 1000px;
-  padding-top: 50px;
-}
-
-.price_title {
-  display: block;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-align: center;
-  font-size: 25px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-}
-
-.price_block {
-  margin-top: 50px;
 }
 
 .header_title_price {
@@ -171,9 +106,47 @@ nav ul li a {
       font-weight: 600;
 }
 
-.first_screen {
-  height: 100vh;
+.network_title {
+    padding-top: 50px;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
+
+.stats_name {
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 10px;
+  margin-left: 13px;
+}
+
+.stats_all {
+  content: "";
+  border-left: 1px solid #ef2525;
+  height: 12%;
+
+}
+
+
+.stats_dots {
+  color: #ef2525;
+}
+
+.stats_count {
+  font-weight: 700;
+}
+
+.stats_url {
+  font-style: italic;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 991px) {
+      .stats_all {
+        height: 17%;
+      }
+    }
 
 @media screen and (max-width: 864px) {
       .logo {
@@ -315,10 +288,6 @@ nav ul li a {
     position: static;
   }
 
-  .price {
-    margin-top: 1100px;
-  }
-
   .header_title {
     font-size: 34px;
     margin-top: 50px;
@@ -342,6 +311,10 @@ nav ul li a {
         margin-left: 0;
   }
 
+  .stats_all {
+    height: 22%;
+  }
+
 
 }
 
@@ -350,7 +323,8 @@ nav ul li a {
     text-align: center;
   }
 
-  .price {
-    margin-top: 1200px;
+  .stats_all {
+    text-align: left;
   }
+
 }
