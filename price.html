@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>TIN | Прайс</title>
+  <title>TIN | Главная</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/price.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
+  <div class="first_screen">
   <header>
     <div class="container">
             <nav>
@@ -25,7 +25,6 @@
                   </div>
                   <div class="nav-wrapper">
                         <ul>
-                              <li><a href="index.html">Главная</a></li>
                               <li><a href="price.html">Прайс</a></li>
                               <li><a href="stats.html">Статистика</a></li>
                         </ul>
@@ -34,69 +33,53 @@
       </div>
   </header>
 
-  <div class="container packets">
-    <h1 class="header_title_price">Прайс <span class="header_title_dots">:</span></h1>
-    <div class="row">
-      <div class="col-md-12 col-sm-12 col-lg-4">
-        <div class="first_full">
-            <div class="first_full_inside">
-              <img class="first_img" src="img/rocket.png" alt="Стандарт">
-              <h2 class="top_title">Стандарт</h2>
-            </div>
-            <ul class="top_list">
-              <li class="top_list_item"> – Публикация в Instagram</li>
-              <li class="top_list_item"> – Публикация в Telegram</li>
-              <li class="top_list_item"> – Публикация в Вконтакте</li>
-              <li class="top_list_item"> – Публикация в Facebook</li>
-              <li class="top_list_item"> – 1 Instagram история</li>е
-            </ul>
-            <h3 class="first_old_price">440 грн</h3>
-            <h1 class="top_new_price">370 грн</h1>
-        </div>
-
+  <div id="particles-js">
+  <div id="particles-contents" class="container">
+    <h1 class="header_title">
+      Наши социальные сети <span class="header_title_dots">:</span>
+    </h1>
+    <div class="row absent">
+      <div class="col-12 col-md-3 text-center networks_mobile">
+        <a href="https://www.instagram.com/this_irpin_grisha/">
+          <img src="img/insta_logo.png" alt="Instagram">
+        <h3 id="instagram" class="counter"></h3>
+        <span class="subscribers">подписчика</span>
+        </a>
       </div>
-
-      <div class="col-md-12 col-sm-12 col-lg-4">
-        <div class="top_full">
-            <div class="top_full_inside">
-              <img class="top_img" src="img/fire.png" alt="Полный фарш">
-              <h2 class="top_title">Полный фарш</h2>
-            </div>
-            <ul class="top_list">
-              <li class="top_list_item"> – Публикация в Instagram навсегда</li>
-              <li class="top_list_item"> – 3 Instagram истории за неделю </li>
-              <li class="top_list_item"> – Закрепленный пост в Telegram на 7 дней </li>
-              <li class="top_list_item"> – Закрепленный пост в Вконтакте на 7 дней </li>
-              <li class="top_list_item"> – Публикация в Facebook</li>
-              <li class="top_list_item"> – Делаем публикации в prime-time</li>
-            </ul>
-            <h3 class="top_old_price">1910 грн</h3>
-            <h1 class="top_new_price">1400 грн</h1>
-        </div>
+      <div class="col-12 col-md-3 text-center networks_mobile">
+        <a href="https://www.vk.com/this_irpin_nigger">
+          <img src="img/vk_logo.png" alt="Vkontakte">
+        <h3 id="vk" class="counter"></h3>
+        <span class="subscribers">подписчика</span>
+        </a>
       </div>
-
-      <div class="col-md-12 col-sm-12 col-lg-4">
-        <div class="first_full">
-            <div class="second_full_inside">
-              <img class="second_img" src="img/collision.png" alt="Минимал">
-              <h2 class="top_title">Минимал</h2>
-            </div>
-            <ul class="top_list">
-              <li class="top_list_item"> – Публикация в Instagram</li>
-              <li class="top_list_item"> – Публикация в Telegram</li>
-              <li class="top_list_item"> – Публикация в Вконтакте</li>
-              <li class="top_list_item"> – Публикация в Facebook</li>
-            </ul>
-            <h3 class="first_old_price" style="padding-top: 45px;">400 грн</h3>
-            <h1 class="top_new_price">300 грн</h1>
-        </div>
+      <div class="col-12 col-md-3 text-center networks_mobile">
+        <a href="https://www.t.me/this_irpin_nigger">
+          <img src="img/telegram_logo.png" alt="Telegram">
+        <h3 id="telegram" class="counter"></h3>
+        <span class="subscribers">подписчика</span>
+        </a>
+      </div>
+      <div class="col-12 col-md-3 text-center networks_mobile">
+        <a href="https://www.facebook.com/tinirpin">
+          <img src="img/fb_logo.png" alt="Facebook">
+        <h3 id="fb" class="counter"></h3>
+        <span class="subscribers">подписчика</span>
+        </a>
       </div>
     </div>
+    <div class="button_more">
+    <a class="btn btn_more" href="#">Узнать цены</a>
+    </div>
+  </div>
+  </div>
   </div>
 
-  <div class="container">
+
+  <div class="container price">
+    <h1 class="header_title_price">Прайс <span class="header_title_dots">:</span></h1>
     <div class="row">
-      <div class="col-md-12 ">
+      <div class="col-md-12">
 
         <div class="price_block">
        <span class="price_title">Instagram</span>
@@ -166,7 +149,7 @@
           </tr>
           <tr>
           <td>Рекламная публикация в чате "Попутка"</td>
-          <td>150 грн</td>
+          <td>200 грн</td>
           <td><a href="https://t.me/poputka_irpin">t.me/poputka_irpin</a></td>
           </tr>
           <tr>
@@ -277,12 +260,31 @@
       </div>
     </div>
   </div>
+  </section>
 
 
 
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/countUp.js" type="text/javascript"></script>
+  <script src="js/particles.min.js"></script>
+  <script src="js/app.js" type="text/javascript"></script>
 
-
-
+  <script type="text/javascript">
+  var options = {
+  useEasing: true,
+  useGrouping: true,
+  separator: '',
+  decimal: '.',
+  };
+  var instagram = new CountUp('instagram', 0, 13375, 0, 3, options);
+  var vk = new CountUp('vk', 0, 19932, 0, 3, options);
+  var telegram = new CountUp('telegram', 0, 2569, 0, 3, options);
+  var fb = new CountUp('fb', 0, 1345, 0, 3, options);
+  instagram.start();
+  vk.start();
+  telegram.start();
+  fb.start();
+  </script>
 
 
 </body>
